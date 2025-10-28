@@ -1,0 +1,14 @@
+# Python cache files
+__pycache__/
+*.pyc
+
+# Virtual environment
+venv/
+
+# Local config / sensitive files
+backend/utils/
+backend/scraper.py
+
+# Optional: OS files
+.DS_Store
+Thumbs.db

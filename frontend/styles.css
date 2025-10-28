@@ -1,0 +1,114 @@
+/* ----------- GLOBAL STYLES ----------- */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    background: linear-gradient(135deg, #1e1e2f, #2a2a3b);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+/* ----------- CHAT CONTAINER ----------- */
+.container {
+    background: rgba(255, 255, 255, 0.08);
+    width: 90%;
+    max-width: 600px;
+    border-radius: 16px;
+    padding: 25px 20px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #00e6b8;
+}
+
+/* ----------- INPUT AREA ----------- */
+.input-area {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input[type="text"],
+#productLink {
+    width: 100%;
+    padding: 12px 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    outline: none;
+}
+
+button {
+    background: #00e6b8;
+    color: #1e1e2f;
+    font-weight: 600;
+    border: none;
+    border-radius: 8px;
+    padding: 12px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #00cfa3;
+    transform: translateY(-2px);
+}
+
+/* ----------- OUTPUT / PROMPTS AREA ----------- */
+.output-area {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 15px;
+    border-radius: 10px;
+    max-height: 250px;
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.output-area p {
+    background: #33334d;
+    padding: 10px 15px;
+    border-radius: 10px;
+    line-height: 1.4;
+}
+
+/* ----------- LOADING / VIDEO AREA ----------- */
+#videoArea {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#videoLink {
+    background: #33334d;
+    padding: 10px;
+    border-radius: 10px;
+    min-height: 50px;
+}
+
+/* ----------- RESPONSIVE ----------- */
+@media (max-width: 480px) {
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .container {
+        padding: 20px 15px;
+    }
+}

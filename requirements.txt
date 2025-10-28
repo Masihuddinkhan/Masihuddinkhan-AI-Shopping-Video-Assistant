@@ -1,0 +1,27 @@
+# ---- Backend Framework ----
+fastapi==0.115.0
+uvicorn==0.30.1
+
+# ---- LLM / Transformers ----
+transformers==4.44.2
+torch==2.3.1
+sentencepiece==0.2.0
+accelerate==0.33.0
+
+# ---- Data & Utilities ----
+pydantic==2.9.2
+python-dotenv==1.0.1
+requests==2.32.3
+
+# ---- Logging / Configuration ----
+loguru==0.7.2
+
+# ---- Optional (for async or performance) ----
+httpx==0.27.0
+aiofiles==24.1.0
+
+# ---- (Optional) For AI video API integration ----
+moviepy==1.0.3   # if you want to preview / handle short video clips locally
+
+# ---- (Optional) For CORS frontend connection ----
+fastapi[all]==0.115.0
